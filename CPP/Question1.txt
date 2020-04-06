@@ -1,49 +1,49 @@
-
-#include <iostream>
-#include <stirng.h>
-int main()
+#include<iostream>
+#include<string>
+using namespace std;
+int getLIndex(char string[100],char  c)
 {
-	char str[100];
-	char ch; 
-	int Lindex,Findex; 
-	cin>>str
-	cin>>ch;
-	Lindex = getLIndex(str,ch);
-	Findex= getFIndex(str,ch);
-	if(Lindex!=-1)
-		cout<<Findex<<endl<<Lindex;
-	else
-		cout<<"NOT FOUND"<<endl;
-	return 0;	
-}
-int getLIndex(char string,char  c)
-{
-	int size = len(string),i=0;
+	int size = sizeof(string),i=0;
 	while(i<size)
 	{
 		
-		if(string[i]=c){
+		if(string[i]==c){
 		    return i;
-		   break;
 		}	
 		i++; 
 	}
 	
 }
-int getFindex(string, c)
+int getFIndex(char string[100],char c)
 {
-	int size = len(string);
+	int size = sizeof(string);
 	int i=size; 
-	while( i>=0);
+	while(i>=0)
 {		
 		if(string[i]==c){
 		    return i;
- break;
 		}	
-	i--;
+	    i--;
 }
 		
 }
+int main()
+{
+	char str[100];
+	char ch; 
+	int Lindex,Findex; 
+	cin>>str;
+	cin>>ch;
+	Lindex = getLIndex(str,ch);
+	Findex = getFIndex(str,ch);
+	if(Lindex!=-1)
+		cout<<Lindex<<endl<<Findex;
+	else
+		cout<<"NOT FOUND"<<endl;
+	return 0;	
+}
+
+
 SAMPLE INPUT-1
 	Kerala
 a

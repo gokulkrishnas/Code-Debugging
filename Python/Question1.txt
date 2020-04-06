@@ -9,7 +9,7 @@ if(Input[0]<0):
 else:
     prev=-1
 for elem in Input: 
-	if elem =0: 		
+	if elem ==0: 		
 		sign = -1
 	else: 
 		sign = elem / abs(elem) 

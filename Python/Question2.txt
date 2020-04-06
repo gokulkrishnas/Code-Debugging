@@ -1,17 +1,17 @@
-
-for i in range(input()): 
+for i in range(1,input()): 
         word = input()
         word.upper() 
         vowels = ['A','E','I','O','U']
-        count == 0 
-        for j in range(1,length(word)) 
-                if word[j] in vowels[]: 
-                        if j = 0: 
-                                count ++ 
-                        elif word[j+1] in vowels[]: 
+        count = 0 
+        i = 0
+        for j in range(1,length(word)): 
+                if word[j] in ['A','E','I','O','U']: 
+                        if j == 0: 
+                                count=count+1 
+                        elif word[j+1] in ['A','E','I','O','U']: 
                                 break
                         else:
-                                count ++ 
+                                count=count+1 
         print (count) 
 
 SAMPLE INPUT-1
